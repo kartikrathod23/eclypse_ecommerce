@@ -1,12 +1,85 @@
-# React + Vite
+# 🛍️ Eclypse E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Eclypse** is a fully functional, full-stack e-commerce web application designed with performance, scalability, and user experience in mind. Built using the **MERN** (MongoDB, Express.js, React.js, Node.js) stack, it replicates the real-world features of a modern e-commerce platform, including user authentication, product listings, cart management, order processing, and admin controls.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend**
+- React.js (JavaScript)
+- Tailwind CSS
+- Axios (API communication)
+- React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend**
+- Node.js
+- Express.js
+- MongoDB (Mongoose ODM)
+- dotenv (Environment config)
+
+---
+
+## 📁 Folder Structure
+
+```bash
+eclypse_ecommerce/
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   └── .env
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── tailwind.config.js
+├── package.json
+└── README.md
+```
+
+⚙️ Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/kartikrathod23/eclypse_ecommerce.git
+cd eclypse_ecommerce
+```
+
+2. Setup Backend
+```bash
+cd backend
+npm install
+```
+
+Create a .env file and configure the following:
+```
+MONGO_URI=mongodb+srv://rathodkartik293:kartik12345@cluster0.g4ukafw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+PORT=5000
+```
+
+Start the backend server:
+```
+node server.js
+```
+
+3. Setup Frontend
+```
+cd ../frontend
+npm install
+npm run dev
+```
+
+📬 Contact
+Developer: Kartik Rathod
+📧 rathodkartik293@gmail.com
+📱 +91 9307091361
